@@ -9,13 +9,13 @@
 
 <div class="courses">
 <!-- Name of this html is the same as the name of the selector string-->
-<course-card [course]="coreCourse"></course-card>
+<course-card (courseSelected)="onCourseSelected($event)"[course]="coreCourse"></course-card>
 <!--Original HTML Static Design was removed below and copied to course-card.component.html-->
 <!-- Card 2-->
-<course-card [course]="rxjCourse"></course-card>
+<course-card (courseSelected)="onCourseSelected($event)"[course]="rxjCourse"></course-card>
 
 <!-- Card 3-->
-<course-card [course]="ngrxCourse"></course-card>
+<course-card (courseSelected)="onCourseSelected($event)"[course]="ngrxCourse"></course-card>
     
 
 </div>
